@@ -1,0 +1,24 @@
+.detailCard .card-img-top{
+  height: 50px;
+    width: 50px;
+}
+.detailCard{
+  margin-top:5%;
+  padding:8%;
+  background-color:#d8d2d2;
+  background-position: center; /* Center the image */
+   background-repeat: no-repeat; /* Do not repeat the image */
+   background-size: cover; /* Resize the background image to cover the entire container */
+  background-image:url("https://images.unsplash.com/photo-1558486012-817176f84c6d?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8d2VhdGhlcnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60")
+}
+.detailCard .card-title {
+    margin-bottom: .5rem;
+    margin-left: 2%;
+    color:white;
+}
+span {
+  content: "\00B0";
+}
+.boxclass{
+padding:6% 5%;
+}
