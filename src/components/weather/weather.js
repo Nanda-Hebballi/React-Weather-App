@@ -51,7 +51,7 @@ function Weather(){
         <div className="col-12 col-md-6 col-sm-12">
            <WeatherSearch handleSubmit={handleSubmit} cityname={cityname} handleInputChanged={handleInputChanged}/>
         </div>
-        <div className="col-12 col-md-6 col-sm-12">
+        <div className="col-12 col-md-6 col-sm-12 mb-2">
           <WeatherDetail weatherData={weatherData} sunrise={sunrise} sunset = {sunset}/>
         </div>
       </div>
