@@ -3,6 +3,7 @@ import React,{useState,useEffect} from 'react';
 // import { Button,Card,Spinner,Form,Row,Col,Container } from 'react-bootstrap';
 import WeatherSearch from '../weather-search/weather-search';
 import WeatherDetail from '../weather-detail/weather-detail';
+import * as secrets from '../../secrets.json';
 import './weather.css';
 
 function Weather(){
@@ -16,7 +17,7 @@ function Weather(){
   },[]);
 
   const fetchLocation =  async() =>{
-      let url = `https://api.openweathermap.org/data/2.5/weather?q=${cityname}&appid=5c4dec6ad3ef53155b7527da78253474`;
+      let url = `https://api.openweathermap.org/data/2.5/weather?q=${cityname}&appid=${secrets.api_key}`;
       await axios.get(url).then(function (response) {
           setWeatherdata(response.data);
           console.log(response.data);
